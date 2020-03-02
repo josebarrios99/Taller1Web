@@ -1,0 +1,44 @@
+@import url(./styles/fonts.css);
+*{
+    margin: 0;
+}
+body,html{
+    
+}
+h1{
+    color: seashell;
+    font-family: "Futura" medium;
+    font-size: 4em;
+    font-family: msyi;
+}
+
+.background{
+    background-image: url("/images/fondo.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.mainNav{
+    padding-top: 400px;
+    
+}
+.mainNav__logo{
+    text-align: center;
+    padding: 20px;
+}
+.mainNav__mainMenu{
+
+    justify-content: center;
+    display: flex;
+    
+}
+.mainMenu__links{
+    color: aliceblue;
+    padding: 6px 60px;
+    text-decoration: none;
+    font-family: Futura medium;
+}
+.mainMenu__links:hover{
+    border-style: ridge;
+    border-color: rgb(253, 251, 251,0.8);
+}
