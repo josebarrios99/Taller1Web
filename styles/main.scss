@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px) {
+    .mainNav__mainMenu{
+      float: none;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0;
+}
+h1{
+    color: seashell;
+    font-family: "Futura medium condensed";
+    font-size: 4em;
+}
+
+.background{
+    background-image: url("/images/fondo.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.mainNav{
+    padding-top: 5%;
+
+    &__logo{
+        text-align: center;
+        padding: 20px;
+    }
+
+    &__mainMenu{
+        justify-content: center;
+        display: flex;
+    }
+    &__links{
+        color: aliceblue;
+        padding: 6px 60px;
+        text-decoration: none;
+        font-family: "Futura medium";
+    }
+    
+}
+
+.mainMenu__links:hover{
+    border-style: ridge;
+    border-color: rgba(253, 251, 251,0.8);
+}
+
+@import 'fonts';
+

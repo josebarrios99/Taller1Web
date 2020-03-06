@@ -1,51 +1,85 @@
-@import url(./fonts.css);
 @media screen and (max-width: 600px) {
-    .mainNav__mainMenu{
-      float: none;
-      width: 100%;
-      flex-direction: column;
-      text-align: center;
-    }
-}
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
-body,html{
-    
-}
-h1{
-    color: seashell;
-    font-family: "Futura medium condensed";
-    font-size: 4em;
-}
-
-.background{
-    background-image: url("/images/fondo.jpg");
-    background-size: cover;
+  .mainNav__mainMenu {
+    float: none;
     width: 100%;
-    height: auto;
-}
-.mainNav{
-    padding-top: 5%;
-}
-.mainNav__logo{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
-    padding: 20px;
+  }
 }
-.mainNav__mainMenu{
 
-    justify-content: center;
-    display: flex;
-    
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.mainMenu__links{
-    color: aliceblue;
-    padding: 6px 60px;
-    text-decoration: none;
-    font-family: "Futura medium";
+
+body, html {
+  margin: 0;
 }
-.mainMenu__links:hover{
-    border-style: ridge;
-    border-color: rgb(253, 251, 251,0.8);
+
+h1 {
+  color: seashell;
+  font-family: "Futura medium condensed";
+  font-size: 4em;
 }
+
+.background {
+  background-image: url("/images/fondo.jpg");
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.mainNav {
+  padding-top: 5%;
+}
+
+.mainNav__logo {
+  text-align: center;
+  padding: 20px;
+}
+
+.mainNav__mainMenu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainNav__links {
+  color: aliceblue;
+  padding: 6px 60px;
+  text-decoration: none;
+  font-family: "Futura medium";
+}
+
+.mainMenu__links:hover {
+  border-style: ridge;
+  border-color: rgba(253, 251, 251, 0.8);
+}
+
+@font-face {
+  font-family: Futura light;
+  src: url("../fonts/futura light bt.ttf");
+}
+
+@font-face {
+  font-family: "Futura medium";
+  src: url("../fonts/futura medium bt.ttf");
+}
+
+@font-face {
+  font-family: "Futura medium condensed";
+  src: url("../fonts/futura medium condensed bt.ttf");
+}
+
+@font-face {
+  font-family: msyi;
+  src: url("../fonts/msyi.ttf");
+}
+/*# sourceMappingURL=main.css.map */
