@@ -5,6 +5,11 @@
       flex-direction: column;
       text-align: center;
     }
+    .mainNav__logo{
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
 }
 *{
     margin: 0;
@@ -15,16 +20,18 @@ body,html{
 }
 h1{
     color: seashell;
-    font-family: "Futura medium condensed";
-    font-size: 4em;
+    font-family: "msyi";
+    font-size: 8vw;
 }
-
+//set the background of each container
 .background{
-    background-image: url("/images/fondo.jpg");
+    background-image: url("/images/1.png");
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: auto;
 }
+//menu section
 .mainNav{
     padding-top: 5%;
 
@@ -41,14 +48,15 @@ h1{
         color: aliceblue;
         padding: 6px 60px;
         text-decoration: none;
-        font-family: "Futura medium";
+        font-family: "Futura light";
+        font-size: 1.5em;
     }
     
 }
 
-.mainMenu__links:hover{
+.mainNav__links:hover{
     border-style: ridge;
-    border-color: rgba(253, 251, 251,0.8);
+    border-color: #D8CACA;
 }
 
 @import 'fonts';
