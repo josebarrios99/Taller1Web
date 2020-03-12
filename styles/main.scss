@@ -55,6 +55,11 @@ h2{
     font-family: "Futura light";
     font-size: 3vw;
 }
+h3{
+    font-family: "Futura medium condensed";
+    color: #FF4343;
+    font-size: 3vw;
+}
 p{
     font-family: "Futura medium condensed";
     color: white;
@@ -92,6 +97,7 @@ p{
     border-style: ridge;
     border-color: #D8CACA;
 }
+//about us section
 .aboutUs{
     text-align: center;
     width: 100%;
@@ -112,8 +118,58 @@ p{
         color: white;
         font-size: 1.5em;
         font-family: "Futura medium condensed";
-
     }
+}
+//new section
+.news{
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    padding: 15%;
+    flex-wrap: wrap;
+    &__content{
+        padding: 20px;
+    }
+    &__container{
+        height: 700px;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__new1{
+        width: 33.3%;
+        display: flex;
+        background-image: url("../images/new1.png");
+        background-size: cover;
+    }
+    &__new2{
+
+        width: 33.3%;
+        
+    }
+    &__new3{
+
+        width: 33.3%;
+        background-color: #161616;
+        
+    }
+   
+}
+.new2{
+    &__subnew1{
+        height: 50%;
+        background-image: url("../images/new2.png");
+        background-size: cover;
+    }
+    &__subnew2{
+        height: 50%;
+        background-image: url("../images/new3.png");
+        background-size: cover;
+    }
+line{
+    stroke:#FF4343;;
+    stroke-width:2;
+}
 }
 
 
