@@ -74,6 +74,7 @@ h3 {
   font-family: "Futura medium condensed";
   color: #FF4343;
   font-size: 3vw;
+  padding-top: 10%;
 }
 
 h4 {
@@ -92,6 +93,15 @@ p {
   font-family: "Futura medium condensed";
   color: white;
   font-size: 3vw;
+}
+
+.btn {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#F15A24), to(#F7931E));
+  background-image: linear-gradient(to right, #F15A24, #F7931E);
+  font-size: 2vw;
+  font-family: "Futura medium";
+  cursor: pointer;
 }
 
 .mainNav {
@@ -286,6 +296,62 @@ p {
   width: 33.3%;
   text-align: center;
   padding-top: 15%;
+}
+
+.gameSection__slider {
+  overflow: hidden;
+  text-align: center;
+  scroll-behavior: smooth;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100%)[3];
+      grid-template-columns: repeat(3, 100%);
+  margin-top: 5%;
+}
+
+.gameSection__slider section {
+  position: relative;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  margin: 0%;
+}
+
+.gameSection__slider section .item {
+  padding: 50px 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gameSection__slider section a {
+  position: absolute;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 10em;
+  padding-right: 4%;
+  width: 80px;
+  padding-top: 15%;
+  text-align: center;
+  z-index: 1;
+}
+
+.gameSection__slider section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.gameSection__slider section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 @font-face {

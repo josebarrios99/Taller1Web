@@ -63,6 +63,7 @@ h3{
     font-family: "Futura medium condensed";
     color: #FF4343;
     font-size: 3vw;
+    padding-top: 10%;
 }
 h4{
     font-family: "trajan";
@@ -78,6 +79,13 @@ p{
     font-family: "Futura medium condensed";
     color: white;
     font-size: 3vw;
+}
+.btn{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #F15A24 , #F7931E);
+    font-size: 2vw;
+    font-family: "Futura medium";
+    cursor: pointer;
 }
 
 //menu section
@@ -241,6 +249,50 @@ line{
         }
     }
 }
+.gameSection{
+    
+}
+.gameSection__slider{
+    overflow:hidden;
+    text-align: center;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    margin-top: 5%;
+    
+    section{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        margin: 0%;
+        
+        .item{
+          padding: 50px 2px;
+          display: flex;
+          flex-direction: column;
+        }
+        a{
+          position: absolute;
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 10em;
+          padding-right: 4%;
+          width: 80px;
+          padding-top: 15%;
+          text-align: center;
+          z-index: 1;
+          &:nth-of-type(1){
+            top:0; bottom: 0; left: 0;
+            
+          }
+          &:nth-of-type(2){
+            top:0; bottom: 0; right: 0;
+                      }
+        }
+           
+    }
+  }
 
 @import 'fonts';
 
