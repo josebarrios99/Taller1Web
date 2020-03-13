@@ -6,6 +6,9 @@
     .principal{
         display: block;
     }
+    .news{
+        display: none;
+    }
     .mainNav__links{
         padding: 0.5%;
     }
@@ -25,6 +28,7 @@
             padding: 6px 60px;
             text-decoration: none;
             font-family: "Futura light";
+            font-size: 20px;
             margin-top: 2%;
         }
 
@@ -60,6 +64,16 @@ h3{
     color: #FF4343;
     font-size: 3vw;
 }
+h4{
+    font-family: "trajan";
+    font-size: 4vw;
+    color: #D8CACA;
+}
+.vision{
+    font-family: "trajan";
+    font-size: 2vw;
+    color: #D8CACA;
+}
 p{
     font-family: "Futura medium condensed";
     color: white;
@@ -84,7 +98,7 @@ p{
         padding: 6px 60px;
         text-decoration: none;
         font-family: "Futura light";
-        font-size: 1.5em;
+        font-size: 4vw;
         margin-top: 1.5%;
     }
     &__links:hover{
@@ -171,7 +185,62 @@ line{
     stroke-width:2;
 }
 }
-
+.newGame{
+    width: 100%;
+    padding-top: 5%;
+    &__container{
+        text-align: center;
+        width: auto;
+        margin: auto;
+        padding-bottom: 8%;
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+    &__content{
+        font-family: "Futura light";
+        padding: 2%;
+    }
+    &__link{
+        border-style: ridge;
+        text-decoration: none;
+        color: white;
+        font-family: "Futura medium";
+        font-size: 2vw;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+.companyVision{
+    text-align: center;
+    &__container{
+        height: auto;
+        display: flex;
+        
+        &__title1{
+            height: 782px;
+            width: 33.3%;
+            padding-top: 15%;
+            background-image: url("../images/vision1.png");
+            text-align: center;
+        }
+        &__title2{
+            position: relative;
+            margin-top: 2%;
+            height: 782px;
+            width: 33.3%;
+            background-image: url("../images/vision2.png");
+            text-align: center;
+            padding-top: 25%;
+        }
+        &__title3{
+            background-image: url("../images/vision3.png");
+            height: 782px;
+            width: 33.3%;
+            text-align: center;
+            padding-top: 15%;
+        }
+    }
+}
 
 @import 'fonts';
 
